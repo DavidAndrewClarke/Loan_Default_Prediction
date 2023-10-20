@@ -1,33 +1,48 @@
 # Loan Default Prediction
 
-## The Problem Area
-
-### Area of Interest 
+## Area of Interest 
 
 The area of interest is predicting loan defaults in the financial sector, specifically within the domain of lending and credit
 
-### Challenges and Opportunities
+## The Problem Area
 
-Predicting loan defaults is crucial for any financial institution as an inability to predict defaults can lead to significant financial losses. Conversely, over-predicting defaults can lead to missed opportunities where creditworthy customers are denied loans. Therefore, there is an opportunity and need to leverage sophisticated machine learning techniques to accurately predict the likelihood of a borrower defaulting on a loan, thereby enhancing the decision making of financial institutions
+The financial sector is a critical pillar for most developed economies as it enables transactions, investments and provides credit which stimulates growth. However, it faces several challenges, one of which is loan defaults. Loan defaults occur when borrowers are unable to meet the obligations of the repayment terms as agreed with the lending institution. The negative effects of loan defaults include financial loss for lending institutions, reduced trust in financial systems, decreased credit availibility, and in some cases, financial crises. Additionally, over-predicting defaults can lead to missed opportunities and unfair lending practices where creditworthy customers are denied loans. Accurately predicting loan defaults is therefore a significant concer for both lenders and borrowers. 
 
-## The User
+## How Might We Statement
 
-### Who Experiences these Challenges
+'How might we leverage sophisticated machine learning techniques to accurately predict loan defaults, thereby assisting financial institutions in making more informed decisions, reducing financial losses, maximizing customer acquisition and promoting fair lending practices.'
 
-Banks, credit unions and other financial institutions that provide loans to individuals and businesses experience these challenges. Additionally, borrowers who are denied loans due to inaccurate predictions are also negatively affected.
+## Affected Parties
 
-### Benefits
+Financial institutions that provide loans to individuals and businesses experience these challenges. Additionally, borrowers who are denied loans due to inaccurate predictions are also negatively affected. The ripple effects can also significantly impact the financial health of the economy at large as witnessed during the US financial crash in 2008. By utilizing sophisticated machine learning techniques and improving the accuracy of loan default predictions, financial institutions can benefit from improved decision making, enhanced risk management and more effective customer acquisition. For borrowers, improved accuracy cam reduce the likelihood that creditworthy individuals are unfairly denied loans. 
 
-For financial institutions, accurate default predictions can assist in reducing financial losses and improve risk management. For borrowers, accurate predictions can ensure that creditworthy individuals are not unfairly denied loans. 
+## Proposed Data Science Solution
 
-## The Big Idea
+The objective of this project is to develop a robust model capable of accurately predicting loan defaults. The machine learning techniques being considered include Logistic Regression, Decision Trees, Random Forests and Support Vector Machines (SVM). The dataset contains 17 features excluding the target, however, following data pre-processing (one-hot encoding) and feature engineering (creating new features based on interactions between existing features), there will be many additional features. As a result, it will be important to consider these ML techniques and their suitability for different aspects of the problem at hand. 
 
-### Machine Learning Solutions
+## The Impact and Business Value
 
-Machine Learning techniques such as logistic regression, decision trees, random forests and neural networks can handle large datasets, learn complex patterns and provide predictive models that can be used to predict loan defaults.
+Accurate loan default predictions can lead to substantial savings for financial lending institutions. According to data published by Statista, as of Q2 2023, approximately 2.36% of all consumer loans at commercial banks in the United States were reported as delinquent. The project's aim, even by a modest margin, could translate to billions of dollars in savings, given the vast sums involved in lending. A simplistic approach to quantifying an rough estimate of the impact of this improved accuracy can be done by calculating 2.36% (delinquency rate in 2023) of $17 trillion (Fed reported total consumer debt in 2023) which is approx. $400 billion. A mere 1% improvement in prediction accuracy could result in approx. $4 billion in savings which is significant. 
 
-## The Impact
+## Description of the Dataset
 
-### Business Value
+The dataset was obtained from Kaggle and the original source is a challenge hosted by Coursera where it is defined as a 'real world dataset' without revealing the actual company or specifics surrounding where the data originated. It encapsulates details of individuals who have taken out loans. Features emcompass demographics, financial particulars and loan specifics. The target variable is `Defaut`. 
 
-Predicting loan defaults accurately 
+`LoanID`: 'Unique identifier for the loan.'
+`Age`: 'Age of the borrower.'
+`Income`: 'Income of the borrower.'
+`LoanAmount`: 'Amount of loan taken.'
+`CreditScore`: 'Borrower's credit score.'
+`MonthsEmployed`: 'Duration (in months) the borrower has been employed.'
+`NumCreditLines`: 'Number of credit lines the borrower has.'
+`InterestRate`: 'Interest rate of the loan.'
+`LoanTerm`: 'Term of the loan in months.'
+`DTIRatio`: 'Debt-to-Income ratio.'
+`Education`: 'Education level of the borrower.'
+`EmploymentType`: 'Type of employment (e.g., Full-time, Part-time).'
+`MaritalStatus`: 'Marital status of the borrower.'
+`HasMortgage`: 'Whether the borrower has a mortgage.'
+`HasDependents`: 'Whether the borrower has dependents.'
+`LoanPurpose`: 'Purpose for which the loan was taken.'
+`HasCoSigner`: 'Whether there is a co-signer for the loan.'
+`Default`: 'Whether the loan defaulted (1 for Yes, 0 for No).'
