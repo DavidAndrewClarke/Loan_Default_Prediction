@@ -46,3 +46,15 @@ The dataset was obtained from Kaggle and the original source is a challenge host
 `LoanPurpose`: 'Purpose for which the loan was taken.'
 `HasCoSigner`: 'Whether there is a co-signer for the loan.'
 `Default`: 'Whether the loan defaulted (1 for Yes, 0 for No).'
+
+## EDA Findings
+
+1) Data Imbalance: A significant imbalance was observed in the target variable, with a much larger proportion of loans not defaulting compared to those that did. This imbalance has implications for modeling and evaluation strategies
+2) Initial Hypotheses: Preliminary analysis suggested potential relationships between borrower characteristics and loan default likelihood. For example, factors like education level, employment level and income appeared to influence the likelihood of a loan default, showing a slight correlation with lower default rates. It must be noted, however, that these correlation figures were very low.
+3) Key Insights: The EDA highlighted the need for careful feature engineering and data preprocessing, especially in attempting to address the data imbalance of the target variable and also attempting to add some more complexity to the model.
+
+## Baseline Modeling Efforts
+
+1) Model Selection: Logistic Regression and Decision Tree models were utilized as the baseline models to predict loan defaults
+2) Performance Evaluation: Both models demonstrated varying levels of accuracy and precision. The Logistic Regression model showed high overall accuracy (89%), but struggled with extremely low recall (5%) for the default class. The Decision Tree provided a slightly more balanced performance across classes but with lower accuracy (80%) and precision (19% for defaults).
+3) Challenges: The initial models highlight the challenges presented by imbalanced datasets. This necessitates a deeper exploration of advanced modeling techniques, including handling imbalanced data, model tuning and more sophisticated feature engineering. 
