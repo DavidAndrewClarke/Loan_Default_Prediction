@@ -26,7 +26,7 @@ Accurate loan default predictions can lead to substantial savings for financial 
 
 ## Description of the Dataset
 
-The dataset was obtained from Kaggle and the original source is a challenge hosted by Coursera where it is defined as a 'real world dataset' without revealing the actual company or specifics surrounding where the data originated. It encapsulates details of individuals who have taken out loans. Features emcompass demographics, financial particulars and loan specifics. The target variable is `Defaut`. 
+The dataset was obtained from Kaggle [here](https://www.kaggle.com/datasets/nikhil1e9/loan-default) and the original source is a challenge hosted by Coursera where it is defined as a 'real world dataset' without revealing the actual company or specifics surrounding where the data originated. It encapsulates details of individuals who have taken out loans. Features emcompass demographics, financial particulars and loan specifics. The target variable is `Defaut`. 
 
 `LoanID`: 'Unique identifier for the loan.'
 `Age`: 'Age of the borrower.'
