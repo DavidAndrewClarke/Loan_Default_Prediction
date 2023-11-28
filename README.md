@@ -63,6 +63,21 @@ The dataset was obtained from Kaggle and the original source is a challenge host
 
 1) Due to the significant class imbalance, SMOTE was used to resample the data and create a more robust training dataset for the models
 2) Random Forests and Gradient Boosting were selected
-3) The ROC AUC score was unsatisfactory for both models
+   
+   - RF (Baseline model)
+      - Train Accuracy: 99%
+      - Test Accuracy: 87.5%
+      - ROC AUC score: 54%
+      - Precision (class 1 default): 35%
+      - Recall (class 1 default): 11%
+      - 
+   - GB (Optimized model)
+      - Train Accuracy: 92%
+      - Test Accuracy: 87.1%
+      - ROC AUC score: 55%
+      - Precision (class 1 default): 35%
+      - Recall (class 1 default): 16%
 
 ## Next Steps
+
+1) 
