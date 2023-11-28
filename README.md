@@ -80,4 +80,6 @@ The dataset was obtained from Kaggle [here](https://www.kaggle.com/datasets/nikh
 
 ## Next Steps
 
-1) 
+1) Revisit the approach to sampling and try other techniques to address class imbalance. The models will then be trained and tested on these new datasets and compared with the previous results of models using SMOTE.
+2) Utilize AWS to facilitate more model fine-tuning and other complex models such as Support Vector Machines
+
