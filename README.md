@@ -57,4 +57,8 @@ The dataset was obtained from Kaggle and the original source is a challenge host
 
 1) Model Selection: Logistic Regression and Decision Tree models were utilized as the baseline models to predict loan defaults
 2) Performance Evaluation: Both models demonstrated varying levels of accuracy and precision. The Logistic Regression model showed high overall accuracy (89%), but struggled with extremely low recall (5%) for the default class. The Decision Tree provided a slightly more balanced performance across classes but with lower accuracy (80%) and precision (19% for defaults).
-3) Challenges: The initial models highlight the challenges presented by imbalanced datasets. This necessitates a deeper exploration of advanced modeling techniques, including handling imbalanced data, model tuning and more sophisticated feature engineering. 
+3) Challenges: The initial models highlight the challenges presented by imbalanced datasets. This necessitates a deeper exploration of advanced modeling techniques, including handling imbalanced data, model tuning and more sophisticated feature engineering.
+
+## Advanced Modeling Efforts
+
+1) Random Forests and Gradient Boosting were selected
