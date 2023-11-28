@@ -61,4 +61,8 @@ The dataset was obtained from Kaggle and the original source is a challenge host
 
 ## Advanced Modeling Efforts
 
-1) Random Forests and Gradient Boosting were selected
+1) Due to the significant class imbalance, SMOTE was used to resample the data and create a more robust training dataset for the models
+2) Random Forests and Gradient Boosting were selected
+3) The ROC AUC score was unsatisfactory for both models
+
+## Next Steps
